@@ -1,0 +1,1493 @@
+{
+  "meta": {
+    "skill": "entertainment-contract",
+    "schema_version": "1.0.0",
+    "generated": "2026-11-11",
+    "judgment_point_total": 62,
+    "text_check_step": {
+      "step": "⓿",
+      "name": "文本体检",
+      "count": 6,
+      "note": "六项前置检查，不占判断点编号；见 SKILL.md 第 0 步",
+      "items": [
+        "金额、比例、期限前后一致",
+        "条款编号连续",
+        "援引的法律真实存在且签约时有效",
+        "当事人称谓与定义统一",
+        "空白项填全",
+        "条款之间互不冲突"
+      ]
+    },
+    "levels": {
+      "🔴": "致命",
+      "🟡": "中危",
+      "🟢": "提示"
+    },
+    "families": [
+      {
+        "code": "A",
+        "name": "达人签约",
+        "count": 13,
+        "file": "references/02-baseline-talent.md"
+      },
+      {
+        "code": "B",
+        "name": "商业变现",
+        "count": 14,
+        "file": "references/03-baseline-monetization.md"
+      },
+      {
+        "code": "C",
+        "name": "资产权属",
+        "count": 10,
+        "file": "references/04-baseline-assets.md"
+      },
+      {
+        "code": "D",
+        "name": "劳动人事",
+        "count": 10,
+        "file": "references/05-baseline-mcn-hr.md"
+      },
+      {
+        "code": "E",
+        "name": "争议处置",
+        "count": 8,
+        "file": "references/06-baseline-dispute.md"
+      },
+      {
+        "code": "F",
+        "name": "平台合规",
+        "count": 7,
+        "file": "references/01-scenario-index.md"
+      }
+    ],
+    "usage": "按 family 定位 → 逐 id 用 search_keywords 检索合同原文 → 命中即按 default_level 起评，再按条款实际写法上下调级"
+  },
+  "judgment_points": [
+    {
+      "id": "A-01",
+      "family": "A",
+      "name": "主体资格与未成年人合规",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-01 主体资格与未成年人合规",
+      "redlines": [
+        "#02"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 18、19、145 条 ✅",
+        "《未成年人保护法》（2020 修订）第 76 条 ✅",
+        "《网络直播营销管理办法（试行）》**第十七条**\"直播营销人员或者直播间运营者为自然人的，应当年满十六周岁；十六周岁以上的未成年人申请成为直播营销人员或者直播间运营者的，应当经监护人同意\" ✅"
+      ],
+      "search_keywords": [
+        "身份证号码",
+        "法定代理人",
+        "保证已满十八周岁"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-02",
+      "family": "A",
+      "name": "合同性质：劳动关系伪装",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-02 合同性质：劳动关系伪装",
+      "redlines": [
+        "#10"
+      ],
+      "precedents": [
+        "01-1",
+        "01-2",
+        "01-3",
+        "01-4"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《劳动合同法》第 7、10、82 条 ✅",
+        "《关于确立劳动关系有关事项的通知》（劳社部发〔2005〕12 号）第 1 条 ✅"
+      ],
+      "search_keywords": [
+        "考勤",
+        "打卡",
+        "请假",
+        "底薪",
+        "罚款",
+        "服从管理"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-03",
+      "family": "A",
+      "name": "独家性范围与对价平衡",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-03 独家性范围与对价平衡",
+      "redlines": [
+        "#09"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 151 条（显失公平）✅、第 496、497 条（格式条款）✅、第 923 条（转委托需同意）✅、第 563 条（法定解除）✅"
+      ],
+      "search_keywords": [
+        "全球",
+        "包括但不限于",
+        "独家",
+        "转授权"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-04",
+      "family": "A",
+      "name": "账号归属与实名制冲突",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-04 账号归属与实名制冲突",
+      "redlines": [
+        "#04"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 127 条（网络虚拟财产）✅",
+        "《网络安全法》第 24 条（网络实名制）✅"
+      ],
+      "search_keywords": [
+        "账号所有权",
+        "实名",
+        "归属",
+        "移交",
+        "注销"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-05",
+      "family": "A",
+      "name": "达人自带账号与小号",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-05 达人自带账号与小号",
+      "redlines": [
+        "#04"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 127 条（网络虚拟财产）✅",
+        "《网络安全法》第 24 条（网络实名制）✅"
+      ],
+      "search_keywords": [
+        "小号",
+        "新号",
+        "私人账号",
+        "生活号"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "A-06",
+      "family": "A",
+      "name": "艺名、昵称、账号名称权属",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-06 艺名、昵称、账号名称权属",
+      "redlines": [
+        "#05"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 1012 条（姓名权）✅、第 1017 条（笔名参照姓名权保护）✅",
+        "《商标法》第 32 条（不得损害在先权利）✅"
+      ],
+      "search_keywords": [
+        "艺名",
+        "昵称",
+        "账户名称",
+        "终止后不得使用"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "A-07",
+      "family": "A",
+      "name": "著作权与邻接权归属",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-07 著作权与邻接权归属",
+      "redlines": [
+        "#08"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《著作权法》（2020 修正）第 17 条（视听作品归属：非法定类型由当事人约定，未约定归制作者）✅、第 19 条（委托作品可约定归委托人）✅、第 27 条（转让须订立书面合同）✅、第 39 条（表演者权六项，其中第 3–6 项为财产性权利）✅、第 40 条（**职务表演**：演员完成本单位演出任务的表演，其他权利归属由当事人约定，未约定归演出单位）✅"
+      ],
+      "search_keywords": [
+        "著作权",
+        "邻接权",
+        "署名权",
+        "衍生品",
+        "永久无偿"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-08",
+      "family": "A",
+      "name": "肖像权授权期限",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-08 肖像权授权期限",
+      "redlines": [
+        "#05"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 1019 条（肖像权）✅、**第 1021 条（肖像许可使用条款理解有争议的，应当作出有利于肖像权人的解释）**✅、第 1022 条（许可期限约定不明任何一方可随时解除；有明确约定时肖像权人有正当理由仍可解除）✅、第 1023 条（姓名等许可使用参照肖像许可；声音参照肖像权）✅",
+        "《广告法》第 38 条（代言人资格与责任）✅"
+      ],
+      "search_keywords": [
+        "肖像",
+        "声音",
+        "永久",
+        "不可撤销"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-09",
+      "family": "A",
+      "name": "收益分成、结算与数据权",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-09 收益分成、结算与数据权",
+      "redlines": [
+        "#09"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 509 条（诚信履行）✅、第 577 条（违约责任）✅"
+      ],
+      "search_keywords": [
+        "以甲方数据为准",
+        "视为确认",
+        "异议",
+        "成本包括但不限于"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-10",
+      "family": "A",
+      "name": "保底收益与考核扣减",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-10 保底收益与考核扣减",
+      "redlines": [
+        "#10"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 497 条（格式条款排除对方主要权利无效）✅",
+        "若被认定劳动关系：《工资支付暂行规定》第 15 条（不得克扣工资）✅"
+      ],
+      "search_keywords": [
+        "有效直播天数",
+        "挂机",
+        "扣除",
+        "止付"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-11",
+      "family": "A",
+      "name": "期限、自动续约、优先续约",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-11 期限、自动续约、优先续约",
+      "redlines": [
+        "#09"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 151 条 ✅、第 497 条 ✅"
+      ],
+      "search_keywords": [
+        "自动续约",
+        "次数无限制",
+        "优先续约权",
+        "同等条件"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "A-12",
+      "family": "A",
+      "name": "终止后竞业限制与股权回购",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-12 终止后竞业限制与股权回购",
+      "redlines": [
+        "#03"
+      ],
+      "precedents": [
+        "09-1",
+        "09-2",
+        "09-3",
+        "09-4"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《劳动合同法》（2012 修正）第 23 条 ✅（竞业限制须约定并支付补偿）、第 24 条 ✅（人员范围限于三类；期限**不得超过二年**）",
+        "《最高人民法院关于审理劳动争议案件适用法律问题的解释（一）》第 36、38、39 条 ✅"
+      ],
+      "search_keywords": [
+        "竞业限制",
+        "竞业禁止",
+        "不竞争",
+        "无需支付补偿"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "A-13",
+      "family": "A",
+      "name": "违约金与赔偿兜底",
+      "file": "references/02-baseline-talent.md",
+      "heading": "## 判断点 A-13 违约金与赔偿兜底",
+      "redlines": [
+        "#01",
+        "#09"
+      ],
+      "precedents": [
+        "07-1",
+        "07-2",
+        "07-3",
+        "08-1",
+        "08-2",
+        "08-3"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 584 条（损失赔偿范围）✅、第 585 条（违约金调整）✅"
+      ],
+      "search_keywords": [
+        "违约金",
+        "三者数额最高者",
+        "粉丝增长数量",
+        "实际损失为准"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "B-01",
+      "family": "B",
+      "name": "服务范围与交付标准",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-01 服务范围与交付标准",
+      "redlines": [],
+      "precedents": [
+        "02-1",
+        "04-4"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 509、577 条 ✅"
+      ],
+      "search_keywords": [
+        "服务内容",
+        "场次",
+        "时长",
+        "坑位",
+        "验收"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "B-02",
+      "family": "B",
+      "name": "保底销售额（KPI）与统计口径",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-02 保底销售额（KPI）与统计口径",
+      "redlines": [],
+      "precedents": [
+        "02-3",
+        "02-4"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 509 条 ✅"
+      ],
+      "search_keywords": [
+        "销售额",
+        "GMV",
+        "保底",
+        "KPI",
+        "退货"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "B-03",
+      "family": "B",
+      "name": "未达标的救济设计",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-03 未达标的救济设计",
+      "redlines": [],
+      "precedents": [
+        "02-2",
+        "02-3",
+        "02-4",
+        "02-5",
+        "02-6",
+        "04-3",
+        "04-4"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 563、565、566、577、582 条 ✅（565、566 经判例 02-3 判决引用核对）"
+      ],
+      "search_keywords": [
+        "未达成",
+        "退款",
+        "补播",
+        "折算",
+        "保量"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "B-04",
+      "family": "B",
+      "name": "结算基数与佣金计算",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-04 结算基数与佣金计算",
+      "redlines": [
+        "#11"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 509、577 条 ✅"
+      ],
+      "search_keywords": [
+        "佣金",
+        "成交额",
+        "结算额",
+        "扣减",
+        "分档"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "B-05",
+      "family": "B",
+      "name": "成本转嫁与分成基数（专项 · 真实合同验证新增）",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-05 成本转嫁与分成基数（专项 · 真实合同验证新增）",
+      "redlines": [
+        "#11"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 496、497、509 条 ✅"
+      ],
+      "search_keywords": [
+        "利润",
+        "净收益",
+        "运营费用",
+        "摊销",
+        "据实结算"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "B-06",
+      "family": "B",
+      "name": "数据认定与对账机制",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-06 数据认定与对账机制",
+      "redlines": [
+        "#09"
+      ],
+      "precedents": [
+        "02-2",
+        "04-1"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 496、497、509 条 ✅"
+      ],
+      "search_keywords": [
+        "对账",
+        "后台",
+        "异议",
+        "以甲方数据为准",
+        "截图"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "B-07",
+      "family": "B",
+      "name": "付款节点、账期与发票",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-07 付款节点、账期与发票",
+      "redlines": [],
+      "precedents": [
+        "04-1",
+        "04-2"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 509、577、585 条 ✅"
+      ],
+      "search_keywords": [
+        "预付",
+        "账期",
+        "发票",
+        "验收合格"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "B-08",
+      "family": "B",
+      "name": "排期变更、取消与不可抗力",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-08 排期变更、取消与不可抗力",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 563、577、590 条（不可抗力）✅"
+      ],
+      "search_keywords": [
+        "改期",
+        "取消",
+        "不可抗力",
+        "顺延"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "B-09",
+      "family": "B",
+      "name": "指定人员变更与替换权",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-09 指定人员变更与替换权",
+      "redlines": [],
+      "precedents": [
+        "02-1"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 509、577 条 ✅"
+      ],
+      "search_keywords": [
+        "指定",
+        "更换",
+        "替换",
+        "同级别"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "B-10",
+      "family": "B",
+      "name": "商品质量、赠品与侵权担保",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-10 商品质量、赠品与侵权担保",
+      "redlines": [],
+      "precedents": [
+        "02-3"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 577、584 条 ✅",
+        "《广告法》第 38 条（广告主责任、代言人责任）✅"
+      ],
+      "search_keywords": [
+        "赠品",
+        "假冒",
+        "三包",
+        "退换货"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "B-11",
+      "family": "B",
+      "name": "内容合规与虚假宣传责任",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-11 内容合规与虚假宣传责任",
+      "redlines": [],
+      "precedents": [
+        "04-2"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《广告法》第 38 条 ✅",
+        "《网络直播营销管理办法（试行）》（2021）第 17 条（直播间运营者、直播营销人员责任）✅",
+        "《民法典》第 577、584 条 ✅"
+      ],
+      "search_keywords": [
+        "合规",
+        "脚本",
+        "话术",
+        "功效",
+        "封禁"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "B-12",
+      "family": "B",
+      "name": "品类独家与竞品限制",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-12 品类独家与竞品限制",
+      "redlines": [
+        "#09"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 496、497、151 条 ✅"
+      ],
+      "search_keywords": [
+        "独家",
+        "排他",
+        "竞品",
+        "限制期"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "B-13",
+      "family": "B",
+      "name": "道德条款与失德风险",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-13 道德条款与失德风险",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 563、566、577、584 条 ✅",
+        "《广告法》第 38 条 ✅"
+      ],
+      "search_keywords": [
+        "道德",
+        "失德",
+        "负面",
+        "舆论",
+        "声誉"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "B-14",
+      "family": "B",
+      "name": "终止后义务与素材下架",
+      "file": "references/03-baseline-monetization.md",
+      "heading": "## 判断点 B-14 终止后义务与素材下架",
+      "redlines": [
+        "#05",
+        "#12"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 1019、1023 条（肖像许可）✅、第 557、566 条 ✅"
+      ],
+      "search_keywords": [
+        "下架",
+        "删除",
+        "继续使用",
+        "存续"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "C-01",
+      "family": "C",
+      "name": "账号转让与实名制冲突",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-01 账号转让与实名制冲突",
+      "redlines": [
+        "#04"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 127 条（网络虚拟财产）✅",
+        "《网络安全法》第 24 条（网络实名制）✅"
+      ],
+      "search_keywords": [
+        "转让",
+        "过户",
+        "实名",
+        "交付"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "C-02",
+      "family": "C",
+      "name": "账号租赁与借用",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-02 账号租赁与借用",
+      "redlines": [
+        "#04"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 127 条 ✅",
+        "《网络安全法》第 24 条 ✅"
+      ],
+      "search_keywords": [
+        "租赁",
+        "借用",
+        "押金",
+        "限流"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "C-03",
+      "family": "C",
+      "name": "账号代持与控制权",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-03 账号代持与控制权",
+      "redlines": [
+        "#04"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 127 条 ✅",
+        "《网络安全法》第 24 条 ✅"
+      ],
+      "search_keywords": [
+        "代持",
+        "托管",
+        "验证码",
+        "子账号",
+        "提现"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "C-04",
+      "family": "C",
+      "name": "肖像权授权范围",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-04 肖像权授权范围",
+      "redlines": [
+        "#05"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 1019 条（不得以丑化、污损或利用信息技术手段伪造方式侵害肖像权）✅、第 1021 条（肖像许可使用合同的解释，有利于肖像权人）✅、第 1022 条（许可期限无约定或约定不明的，任何一方可随时解除）✅、第 1023 条（许可使用）✅"
+      ],
+      "search_keywords": [
+        "肖像",
+        "转授权",
+        "合成",
+        "不可撤销"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "C-05",
+      "family": "C",
+      "name": "艺名／昵称／商标化",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-05 艺名／昵称／商标化",
+      "redlines": [
+        "#05"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 1017 条（笔名、艺名等参照适用姓名权保护）✅、第 1012 条（姓名权）✅",
+        "《商标法》第 32 条（不得损害在先权利、不得抢注）✅"
+      ],
+      "search_keywords": [
+        "艺名",
+        "商标",
+        "真名",
+        "署名"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "C-06",
+      "family": "C",
+      "name": "IP 授权与商标许可",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-06 IP 授权与商标许可",
+      "redlines": [
+        "#08"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《著作权法》（2020 修正）第 19 条（许可使用合同）、第 27 条（转让合同应明确权利种类、地域范围、价金）✅",
+        "《商标法》第 32 条 ✅"
+      ],
+      "search_keywords": [
+        "独占",
+        "排他",
+        "地域",
+        "改编"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "C-07",
+      "family": "C",
+      "name": "作品著作权与职务表演",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-07 作品著作权与职务表演",
+      "redlines": [
+        "#08"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《著作权法》（2020 修正）第 17 条（视听作品权属）、第 19 条、第 27 条、第 39 条（表演者权，含表明身份与保护表演形象不受歪曲）、第 40 条（职务表演）✅"
+      ],
+      "search_keywords": [
+        "著作权",
+        "表演者",
+        "邻接权",
+        "二次创作"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "C-08",
+      "family": "C",
+      "name": "素材库与未采用素材",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-08 素材库与未采用素材",
+      "redlines": [
+        "#05"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 1019、1023 条 ✅",
+        "《著作权法》第 17、19 条 ✅"
+      ],
+      "search_keywords": [
+        "未采用",
+        "原始素材",
+        "销毁",
+        "二次剪辑"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "C-09",
+      "family": "C",
+      "name": "数据与虚拟财产",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-09 数据与虚拟财产",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 127 条（数据、网络虚拟财产的保护）✅",
+        "《网络安全法》第 24 条 ✅"
+      ],
+      "search_keywords": [
+        "私域",
+        "会员",
+        "导流",
+        "个人信息"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "C-10",
+      "family": "C",
+      "name": "侵权救济与维权主体",
+      "file": "references/04-baseline-assets.md",
+      "heading": "## 判断点 C-10 侵权救济与维权主体",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《著作权法》（2020 修正）第 19、27 条 ✅",
+        "《民法典》第 1019、1023 条 ✅"
+      ],
+      "search_keywords": [
+        "维权",
+        "投诉",
+        "赔偿归属",
+        "律师费"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "D-01",
+      "family": "D",
+      "name": "劳动关系认定（前置判断）",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-01 劳动关系认定（前置判断）",
+      "redlines": [
+        "#03",
+        "#10"
+      ],
+      "precedents": [
+        "01"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《劳动合同法》（2012 修正）第 7、10、82 条 ✅",
+        "《关于确立劳动关系有关事项的通知》（劳社部发〔2005〕12 号）第 1 条 ✅"
+      ],
+      "search_keywords": [
+        "考勤",
+        "打卡",
+        "排班",
+        "请假",
+        "罚款",
+        "员工"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "D-02",
+      "family": "D",
+      "name": "竞业限制范围与补偿",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-02 竞业限制范围与补偿",
+      "redlines": [
+        "#03"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《劳动合同法》（2012 修正）第 23、24 条 ✅",
+        "《最高人民法院关于审理劳动争议案件适用法律问题的解释（一）》第 36、38、39 条 ✅"
+      ],
+      "search_keywords": [
+        "竞业",
+        "同行业",
+        "补偿",
+        "离职后"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "D-03",
+      "family": "D",
+      "name": "保密与商业秘密",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-03 保密与商业秘密",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《劳动合同法》（2012 修正）第 23 条 ✅"
+      ],
+      "search_keywords": [
+        "商业秘密",
+        "不得泄露",
+        "返还",
+        "销毁"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "D-04",
+      "family": "D",
+      "name": "底薪、提成与考核扣减",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-04 底薪、提成与考核扣减",
+      "redlines": [
+        "#10"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《工资支付暂行规定》（劳部发〔1994〕489 号）第 15 条 ✅",
+        "《劳动合同法》（2012 修正）第 7、10 条 ✅"
+      ],
+      "search_keywords": [
+        "保证金",
+        "绩效",
+        "考核",
+        "最低工资"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "D-05",
+      "family": "D",
+      "name": "工作时间与休息",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-05 工作时间与休息",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《劳动合同法》（2012 修正）第 7 条 ✅"
+      ],
+      "search_keywords": [
+        "工时",
+        "排班",
+        "调休",
+        "加班",
+        "随叫随到"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "D-06",
+      "family": "D",
+      "name": "社会保险与用工成本",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-06 社会保险与用工成本",
+      "redlines": [
+        "#10"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《劳动合同法》（2012 修正）第 7、10 条 ✅"
+      ],
+      "search_keywords": [
+        "社会保险",
+        "社保",
+        "工伤",
+        "人身伤害",
+        "自行参保"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "D-07",
+      "family": "D",
+      "name": "书面合同与二倍工资",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-07 书面合同与二倍工资",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《劳动合同法》（2012 修正）第 10、82 条 ✅"
+      ],
+      "search_keywords": [
+        "签订日期",
+        "上岗日期",
+        "社保",
+        "工时",
+        "劳动保护"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "D-08",
+      "family": "D",
+      "name": "规章制度与公示程序",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-08 规章制度与公示程序",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《劳动合同法》（2012 修正）第 7、10 条 ✅"
+      ],
+      "search_keywords": [
+        "规章制度",
+        "员工手册",
+        "公示",
+        "签收"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "D-09",
+      "family": "D",
+      "name": "主播离职与团队竞业",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-09 主播离职与团队竞业",
+      "redlines": [
+        "#03"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《劳动合同法》（2012 修正）第 23、24 条 ✅"
+      ],
+      "search_keywords": [
+        "招揽",
+        "挖角",
+        "不得聘用",
+        "核心人员"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "D-10",
+      "family": "D",
+      "name": "股权／分红激励与退出",
+      "file": "references/05-baseline-mcn-hr.md",
+      "heading": "## 判断点 D-10 股权／分红激励与退出",
+      "redlines": [
+        "#09"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 151、496、497 条 ✅"
+      ],
+      "search_keywords": [
+        "股权",
+        "期权",
+        "虚拟股",
+        "分红",
+        "回购",
+        "持股平台"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "E-01",
+      "family": "E",
+      "name": "退出路径选择",
+      "file": "references/06-baseline-dispute.md",
+      "heading": "## 判断点 E-01 退出路径选择",
+      "redlines": [
+        "#06"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 563 条（法定解除）✅、第 565 条（解除通知到达时解除）✅、第 566 条（解除后果）✅、第 933 条（委托合同任意解除）✅"
+      ],
+      "search_keywords": [
+        "期限",
+        "续约",
+        "解除",
+        "违约行为"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "E-02",
+      "family": "E",
+      "name": "通知形式、送达与生效时点",
+      "file": "references/06-baseline-dispute.md",
+      "heading": "## 判断点 E-02 通知形式、送达与生效时点",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 565 条 ✅（通知到达时解除）"
+      ],
+      "search_keywords": [
+        "通知",
+        "送达",
+        "地址",
+        "邮箱",
+        "视为送达"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "E-03",
+      "family": "E",
+      "name": "违约金主张与调减",
+      "file": "references/06-baseline-dispute.md",
+      "heading": "## 判断点 E-03 违约金主张与调减",
+      "redlines": [
+        "#01"
+      ],
+      "precedents": [
+        "03-4",
+        "04-2"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 584 条（损失赔偿范围）✅、第 585 条（违约金调整）✅、第 577 条 ✅"
+      ],
+      "search_keywords": [
+        "违约金",
+        "实际损失",
+        "可得利益"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "E-04",
+      "family": "E",
+      "name": "结算差额追索",
+      "file": "references/06-baseline-dispute.md",
+      "heading": "## 判断点 E-04 结算差额追索",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 188 条（三年诉讼时效，自知道或应当知道权利受损及义务人之日起算，最长 20 年）✅、第 189 条（同一债务分期履行的，自最后一期履行期限届满之日起算）✅、第 195 条（中断情形：提出履行请求／义务人同意履行／提起诉讼或仲裁／同等效力情形，中断后重新计算）✅、第 197 条（时效期间、计算方法、中止中断事由由法律规定，**当事人约定无效；预先放弃时效利益无效**）✅ —— 四条已于 2026-11-11 经中国人大网《民法典》公报版（npc.gov.cn/wxzlhgb）逐字比对核验"
+      ],
+      "search_keywords": [
+        "对账",
+        "时效",
+        "分期"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "E-05",
+      "family": "E",
+      "name": "账号与资产回收",
+      "file": "references/06-baseline-dispute.md",
+      "heading": "## 判断点 E-05 账号与资产回收",
+      "redlines": [
+        "#04"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 127 条 ✅"
+      ],
+      "search_keywords": [
+        "账号",
+        "实名",
+        "过户",
+        "迁移"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "E-06",
+      "family": "E",
+      "name": "终止后竞业与言论限制",
+      "file": "references/06-baseline-dispute.md",
+      "heading": "## 判断点 E-06 终止后竞业与言论限制",
+      "redlines": [
+        "#03",
+        "#12"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 153 条 ✅、第 506 条 ✅",
+        "《劳动合同法》（2012 修正）第 23、24 条 ✅"
+      ],
+      "search_keywords": [
+        "言论",
+        "投诉",
+        "举报",
+        "贬损",
+        "保密"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "E-07",
+      "family": "E",
+      "name": "证据固定与举证清单",
+      "file": "references/06-baseline-dispute.md",
+      "heading": "## 判断点 E-07 证据固定与举证清单",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [],
+      "search_keywords": [
+        "举证",
+        "证据",
+        "催告"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "E-08",
+      "family": "E",
+      "name": "律师函与谈判筹码",
+      "file": "references/06-baseline-dispute.md",
+      "heading": "## 判断点 E-08 律师函与谈判筹码",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 565 条 ✅、第 577 条 ✅、第 584 条 ✅"
+      ],
+      "search_keywords": [
+        "律师函",
+        "谈判",
+        "筹码"
+      ],
+      "default_level": "🟢"
+    },
+    {
+      "id": "F-01",
+      "family": "F",
+      "name": "报白／资质服务的义务性质与退款",
+      "file": "references/01-scenario-index.md",
+      "heading": "## 判断点 F-01 报白／资质服务的义务性质与退款",
+      "redlines": [],
+      "precedents": [
+        "05-1",
+        "05-2",
+        "05-3",
+        "05-4"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《民法典》第 509、577、579 条 ✅"
+      ],
+      "search_keywords": [
+        "报白",
+        "白名单",
+        "资质",
+        "全额退",
+        "转委托"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "F-02",
+      "family": "F",
+      "name": "平台规则的外部约束力与责任分配",
+      "file": "references/01-scenario-index.md",
+      "heading": "## 判断点 F-02 平台规则的外部约束力与责任分配",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 509、563、590 条 ✅"
+      ],
+      "search_keywords": [
+        "平台规则",
+        "社区公约",
+        "扣分",
+        "限流",
+        "复播"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "F-03",
+      "family": "F",
+      "name": "未成年人出镜与平台实名核验",
+      "file": "references/01-scenario-index.md",
+      "heading": "## 判断点 F-03 未成年人出镜与平台实名核验",
+      "redlines": [
+        "#02"
+      ],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "《未成年人保护法》（2020 修订）第 76 条 ✅",
+        "《网络直播营销管理办法（试行）》（2021）第 8 条、第 17 条 ✅"
+      ],
+      "search_keywords": [
+        "十六周岁",
+        "监护人",
+        "实名核验",
+        "出镜人员"
+      ],
+      "default_level": "🔴"
+    },
+    {
+      "id": "F-04",
+      "family": "F",
+      "name": "直播营销内容合规",
+      "file": "references/01-scenario-index.md",
+      "heading": "## 判断点 F-04 直播营销内容合规",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《广告法》第 38 条 ✅",
+        "《网络直播营销管理办法（试行）》第 17 条 ✅"
+      ],
+      "search_keywords": [
+        "绝对化用语",
+        "功效",
+        "虚假宣传",
+        "口播",
+        "禁用表述"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "F-05",
+      "family": "F",
+      "name": "数据与个人信息",
+      "file": "references/01-scenario-index.md",
+      "heading": "## 判断点 F-05 数据与个人信息",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 127 条 ✅",
+        "《网络安全法》第 24 条 ✅"
+      ],
+      "search_keywords": [
+        "个人信息",
+        "用户信息",
+        "去标识化",
+        "导出",
+        "删除"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "F-06",
+      "family": "F",
+      "name": "平台政策变动与合同僵局",
+      "file": "references/01-scenario-index.md",
+      "heading": "## 判断点 F-06 平台政策变动与合同僵局",
+      "redlines": [],
+      "precedents": [],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "**关联**：《民法典》第 563 条第 1 款第 1 项 ✅（因不可抗力致合同目的不能实现，可解除）、第 533 条 ✅（**情势变更**：基础条件重大变化→重新协商→请求变更或解除）、第 590 条 ✅（**不可抗力**：部分或全部免责＋及时通知与合理期限内提供证明）"
+      ],
+      "search_keywords": [
+        "政策调整",
+        "规则调整",
+        "情势变更",
+        "僵局",
+        "功能关闭"
+      ],
+      "default_level": "🟡"
+    },
+    {
+      "id": "F-07",
+      "family": "F",
+      "name": "外部文件并入与规则援引",
+      "file": "references/01-scenario-index.md",
+      "heading": "## 判断点 F-07 外部文件并入与规则援引",
+      "redlines": [
+        "#09",
+        "#13"
+      ],
+      "precedents": [
+        "05-2"
+      ],
+      "soft_precedent_ref": false,
+      "statutes": [
+        "法条《民法典》第 496、497、510 条（2020）✅"
+      ],
+      "search_keywords": [
+        "详见附件",
+        "框架协议",
+        "运营方案",
+        "平台规则",
+        "不时更新"
+      ],
+      "default_level": "🔴"
+    }
+  ]
+}

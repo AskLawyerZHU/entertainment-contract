@@ -1,0 +1,34 @@
+MIT License
+
+Copyright (c) 2026 entertainment-contract contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+第三方组件许可提示（本仓库不打包、不分发以下组件）：
+
+若使用者为处理扫描件而自行安装 OCR 工具，常见方案依赖：
+- PyMuPDF：AGPL-3.0（另有商业许可可选，权利方 Artifex Software Inc.）
+- RapidOCR：Apache-2.0
+
+仅在本机运行、不对外分发派生作品的，通常不触发 AGPL 的源码披露义务；
+商业闭源分发场景，请自行评估或向权利方取得商业许可。
+
+文书生成脚本依赖 python-docx（MIT）。
